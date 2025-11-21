@@ -1,0 +1,305 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KENVIM Tutoring offers personalized tutoring services including day tutoring, evening tutoring, remedial classes, exam coaching, one-on-one tutoring, and home visits.">
+    <meta name="keywords" content="tutoring, education, exam coaching, one-on-one tutoring, home visits, online learning, study help">
+    <title>KENVIM Tutoring - Book Now</title><!-- Bootstrap + Fonts + Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+    :root{
+        --accent:#007BFF;
+        --bg:#f8f9fa;
+        --card-radius:12px;
+        --btn-radius:50px;
+    }
+    html,body{height:100%;}
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--bg);
+        color: #222;
+        line-height: 1.6;
+        -webkit-font-smoothing:antialiased;
+        -moz-osx-font-smoothing:grayscale;
+    }
+    .navbar{background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.06)}
+    .navbar-brand{color:var(--accent)!important}
+
+    /* Hero */
+    .hero{position:relative;overflow:hidden;height:62vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+    .hero img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:1}
+    .hero .overlay{position:absolute;inset:0;background:linear-gradient(135deg, rgba(0,123,255,0.75), rgba(0,86,179,0.75));z-index:2}
+    .hero .container{position:relative;z-index:3}
+    .hero h1{font-weight:600;font-size:3rem;margin-bottom:10px}
+    .hero p{font-size:1.1rem;opacity:0.95}
+
+    /* Cards */
+    .card{border:none;border-radius:var(--card-radius);box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+    .card i{font-size:1.6rem;color:var(--accent);margin-bottom:10px}
+
+    /* Buttons */
+    .btn-accent{background:var(--accent);color:#fff;border:none;padding:12px 22px;border-radius:var(--btn-radius);font-weight:600}
+    .btn-accent:hover{background:#0056b3}
+    .btn-book{background:transparent;border:2px solid #fff;color:#fff;padding:10px 18px;border-radius:40px}
+
+    /* Pricing */
+    .pricing-card{padding:28px;border-radius:var(--card-radius);background:#fff}
+    .price{font-size:2rem;font-weight:700;color:var(--accent)}
+
+    /* Form */
+    .form-control{border-radius:10px}
+    .contact-form{background:#fff;padding:28px;border-radius:var(--card-radius);box-shadow:0 8px 30px rgba(2,6,23,0.06)}
+
+    /* Footer */
+    footer{background:#23272b;color:#ddd;padding:40px 0}
+    footer a{color:var(--accent)}
+
+    @media (max-width:768px){
+        .hero{height:48vh}
+        .hero h1{font-size:1.8rem}
+        .hero p{font-size:0.95rem}
+    }
+</style>
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">KENVIM Tutoring</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item ms-2"><a id="topBookBtn" class="btn btn-accent" href="#booking">Book Now</a></li>
+            </ul>
+        </div>
+    </div>
+</nav><header id="home" class="hero">
+    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Teacher and student in one-on-one tutoring session">
+    <div class="overlay"></div>
+    <div class="container">
+        <h1>KENVIM Tutoring</h1>
+        <p>Empowering students with personalized learning solutions for academic success.</p>
+        <div class="mt-3">
+            <a href="#booking" class="btn btn-light btn-lg me-2">Get Started</a>
+            <a href="#booking" class="btn btn-book" id="heroBookBtn">Book Now</a>
+        </div>
+    </div>
+</header><main class="pb-5">
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4" style="color:var(--accent)">Our Services</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card p-4 text-center">
+                        <i class="fas fa-sun"></i>
+                        <h5 class="mt-2">Day Tutoring</h5>
+                        <p class="mb-0">Structured daytime sessions for focused, productive learning.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 text-center">
+                        <i class="fas fa-moon"></i>
+                        <h5 class="mt-2">Evening Tutoring</h5>
+                        <p class="mb-0">Flexible evening classes tailored to your schedule.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 text-center">
+                        <i class="fas fa-book-open"></i>
+                        <h5 class="mt-2">Remedial Classes</h5>
+                        <p class="mb-0">Targeted support to bridge learning gaps quickly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><section id="pricing" class="py-5 bg-white">
+    <div class="container">
+        <h2 class="text-center mb-4" style="color:var(--accent)">Pricing Plans</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="pricing-card">
+                    <h5>Basic Package</h5>
+                    <div class="price">$50<span class="fs-6">/session</span></div>
+                    <p>1-hour session, flexible scheduling.</p>
+                    <button class="btn btn-accent choose-plan" data-plan="Basic">Choose Plan</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="pricing-card">
+                    <h5>Standard Package</h5>
+                    <div class="price">$120<span class="fs-6">/5 sessions</span></div>
+                    <p>Best for consistent improvement.</p>
+                    <button class="btn btn-accent choose-plan" data-plan="Standard">Choose Plan</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="pricing-card">
+                    <h5>Premium Package</h5>
+                    <div class="price">$200<span class="fs-6">/10 sessions</span></div>
+                    <p>Comprehensive support and custom plans.</p>
+                    <button class="btn btn-accent choose-plan" data-plan="Premium">Choose Plan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Resources / About trimmed for brevity, keep structure -->
+<section id="about" class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 style="color:var(--accent)">About KENVIM</h2>
+                <p>We provide expert tutors, personalized plans and flexible delivery including home visits and online sessions.</p>
+            </div>
+            <div class="col-lg-6 text-center">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="About KENVIM" class="img-fluid rounded shadow-sm">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Booking section (integrated) -->
+<section id="booking" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4" style="color:var(--accent)">Book a Session</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <form id="bookingForm" class="contact-form">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="name" class="form-label">Full name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="phone" class="form-label">Phone number</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="e.g. +263714603637 or 0714603637" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="subject" class="form-label">Subject / Topic</label>
+                            <input type="text" id="subject" name="subject" class="form-control" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="type" class="form-label">Session type</label>
+                            <select id="type" name="type" class="form-select">
+                                <option>One-on-One</option>
+                                <option>Group</option>
+                                <option>Remedial</option>
+                                <option>Exam Coaching</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="date" class="form-label">Preferred date</label>
+                            <input type="date" id="date" name="date" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="time" class="form-label">Preferred time</label>
+                            <input type="time" id="time" name="time" class="form-control">
+                        </div>
+                        <div class="col-12">
+                            <label for="notes" class="form-label">Additional notes</label>
+                            <textarea id="notes" name="notes" rows="3" class="form-control"></textarea>
+                        </div>
+                        <div class="col-12 d-flex justify-content-between align-items-center">
+                            <small class="text-muted">We will confirm availability within 24 hours.</small>
+                            <div>
+                                <button type="submit" class="btn btn-accent me-2">Send Booking</button>
+                                <button type="button" id="bookWhatsApp" class="btn btn-outline-success">Send via WhatsApp</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Success / Error messages -->
+                <div id="msg" class="mt-3" style="display:none"></div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+</main><footer>
+    <div class="container text-center">
+        <p class="mb-1">&copy; <span id="year"></span> KENVIM Tutoring. All rights reserved.</p>
+        <p class="small">Contact us: <a href="tel:+263714603637">+263 71 460 3637</a> &nbsp;|&nbsp; Email: <a href="mailto:info@kenvimn.example">info@kenvimn.example</a></p>
+    </div>
+    <div class="text-center py-5" style="background:#000; color:#fff; font-weight:800; font-size:2.8rem; letter-spacing:4px;">DONE BY PIXIFY</div>
+</footer><!-- Scripts --><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script><script>
+    // Small helpers and initialisation
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const form = document.getElementById('bookingForm');
+    const msg = document.getElementById('msg');
+
+    function showMessage(text, type='success'){
+        msg.style.display = 'block';
+        msg.className = '';
+        msg.classList.add('alert');
+        msg.classList.add(type === 'success' ? 'alert-success' : 'alert-danger');
+        msg.textContent = text;
+        setTimeout(()=>{ msg.style.display='none'; }, 7000);
+    }
+
+    // Form submit handler: here we simulate sending and show confirmation.
+    form.addEventListener('submit', function(e){
+        e.preventDefault();
+        const data = new FormData(form);
+        const payload = Object.fromEntries(data.entries());
+        // Basic validation
+        if(!payload.name || !payload.phone || !payload.subject){
+            showMessage('Please fill name, phone and subject.', 'error');
+            return;
+        }
+        // Here you would typically send data to your server via fetch/AJAX.
+        // For now we just show a success message and reset the form.
+        showMessage('Booking request sent. We will contact you to confirm availability.');
+        form.reset();
+    });
+
+    // WhatsApp integration: prefill message and open WhatsApp Web / App
+    document.getElementById('bookWhatsApp').addEventListener('click', function(){
+        const data = new FormData(form);
+        const name = data.get('name') || 'No name';
+        const phone = data.get('phone') || 'No phone';
+        const subject = data.get('subject') || 'General tutoring';
+        const type = data.get('type') || '';
+        const date = data.get('date') || '';
+        const time = data.get('time') || '';
+        const notes = data.get('notes') || '';
+
+        const message = `Booking request:%0AName: ${name}%0APhone: ${phone}%0ASubject: ${subject}%0AType: ${type}%0APreferred date: ${date}%0APreferred time: ${time}%0ANotes: ${notes}`;
+
+        // Replace this number with your business WhatsApp number in international format (no + or leading zeros)
+        const waNumber = '263714603637'; // 0714603637 -> 263714603637
+        const waUrl = `https://wa.me/${waNumber}?text=${message}`;
+
+        window.open(waUrl, '_blank');
+    });
+
+    // 'Choose plan' buttons prefill subject and scroll to booking
+    document.querySelectorAll('.choose-plan').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const plan = btn.dataset.plan;
+            document.querySelector('#subject').value = plan + ' package';
+            document.querySelector('#booking').scrollIntoView({behavior:'smooth'});
+        });
+    });
+
+    // Scroll to booking when top button clicked (smooth behaviour)
+    document.querySelectorAll('#topBookBtn, #heroBookBtn').forEach(el=>{
+        el.addEventListener('click', (e)=>{
+            // default anchor navigation will work; smooth scroll for user experience
+        });
+    });
+
+</script></body>
+</html>
